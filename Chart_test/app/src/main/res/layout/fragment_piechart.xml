@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_margin="1dp">
+
+
+        <LinearLayout android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/light_grey"
+            android:padding="20dp">
+
+            <android.support.v7.widget.AppCompatImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/time3">
+            </android.support.v7.widget.AppCompatImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:padding="80dp"
+            android:clickable="false">
+
+            <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pie_chart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:padding="80dp">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_chart_up"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout android:layout_height="match_parent"
+                        android:layout_width="match_parent">
+        <Switch
+            android:text="@string/am"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/am_pm_color"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/switch2" />
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="日付を選択してください"
+                android:textSize="20dp"
+                android:id="@+id/tv2_emp"
+                android:layout_centerInParent="true">
+            </TextView>
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_margin="1dp"
+    android:layout_weight="3">
+
+        <LinearLayout android:layout_height="match_parent"
+                      android:layout_width="match_parent"
+                      android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/specific"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                cardview:cardBackgroundColor="@color/time_range_backcolor"
+                cardview:cardCornerRadius="0dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+
+
+                    <TextView
+                        android:id="@+id/item_tv_pie"
+                        android:text='"ひとり"の時間帯'
+                        android:textSize="25sp"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:background="@color/time_range"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/item_tv_pie">
+
+
+                        <TextView
+                            android:id="@+id/item_tv_pie2"
+                            android:textSize="50sp"
+                            android:paddingLeft="8dp"
+                            android:lineSpacingExtra="10dp"
+                            android:paddingTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </android.support.v4.widget.NestedScrollView>
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                cardview:cardBackgroundColor="@color/date_backcolor"
+                cardview:cardCornerRadius="0dp"
+                android:layout_weight="2">
+
+
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    >
+
+                    <TextView
+                        android:id="@+id/item_tv_date"
+                        android:text="日付"
+                        android:textSize="25sp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:background="@color/date"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ListView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/item_tv_date"
+                        android:id="@+id/listview_pie"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

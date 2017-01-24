@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">みんなといっしょ</string>
+    <string name="navigation_hirori">詳しく見る</string>
+    <string name="navigation_tomo">データを処理</string>
+    <string name="navigation_data">データを送信</string>
+    <string name="navigation_piechart">パッと見グラフ</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="am">午前</string>
+    <string name="navigation_shuta">shuta</string>
+
+
+</resources>
