@@ -5,7 +5,7 @@ Offline Version for MTI
 Android Studio 2.0.0以上</br>
 Android端末(API level > 21)</br>
 子供端末で取得したcsvファイル</br>
-***本プログラムはネットワークを利用しない</br>
+*** 本プログラムはネットワークを利用しない</br>
 
 ##実行に必要なファイル
 １．子供端末の取得Bluetoothデータ</br>
@@ -30,7 +30,7 @@ Android端末(API level > 21)</br>
 は</br>
 /（androidデバイスのメモリのルートディレクトリ）</br>
 に保存され，そのファイルを参照し解析を行う．</br>
-** サンプルのために,github「tsukuba-pbl/16_2_Android_offline」のコードのルートディレクトリで「friendlist.csv」用意しました。その中で3つBluetoothID「aaaaaaaaaa」、「bbbbbbbbbbbb」、「cccccccccccc」を友達3つとして保存しました。実行の時直接androidデバイスのメモリのルートディレクトリにコピーペーストしてください。
+*** サンプルのために,github「tsukuba-pbl/16_2_Android_offline」のコードのルートディレクトリで「friendlist.csv」用意しました。その中で3つBluetoothID「aaaaaaaaaa」、「bbbbbbbbbbbb」、「cccccccccccc」を友達3つとして保存しました。実行の時直接androidデバイスのメモリのルートディレクトリにコピーペーストしてください。
 
 ##実行
 1.MainActivityのname引数で子供端末と対応したIDを設定する(23行目)</br>
