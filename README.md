@@ -24,7 +24,7 @@ Android端末(API level > 21)</br>
 * (ID)_acc.csv</br>
 は</br>
 /（androidデバイスのメモリのルートディレクトリ）</br>
-に保存され，それらのファイルを参照し解析を行う．</br>
+に保存され，それらのファイルを参照し解析を行う．</br></br>
 2.全部友達のBluetoothIDを保存したファイル</br>
 * friendlist.csv　</br>
 は</br>
