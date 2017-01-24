@@ -5,7 +5,7 @@ Offline Version for MTI
 Android Studio 2.0.0以上</br>
 Android端末(API level > 21)</br>
 子供端末で取得したcsvファイル</br>
-本プログラムはネットワークを利用しない</br>
+***本プログラムはネットワークを利用しない</br>
 
 ##実行に必要なファイル
 １．子供端末の取得Bluetoothデータ</br>
