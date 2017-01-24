@@ -47,12 +47,13 @@ public class TomoFragment extends Fragment {
     private String sdPath = Environment.getExternalStorageDirectory().getPath();
 
     //現在日時を取得する
-    Calendar c = Calendar.getInstance();
+    Calendar ccc = Calendar.getInstance();
     //フォーマットパターンを指定して表示する
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日 E曜日");
-    String time = sdf.format(c.getTime());
+    String time = sdf.format(ccc.getTime());
     String nowtime = time.substring(0,4)+time.substring(5,7)+time.substring(8,10);
 
+    File MTIdir = new File("/sdcard/MTI/");
     File namedir = new File("/sdcard/MTI/"+name);
     File datedir = new File("/sdcard/MTI/"+name+"/"+nowtime);
 
@@ -90,6 +91,11 @@ public class TomoFragment extends Fragment {
         listview = (ListView) view.findViewById(R.id.listview_data);
 
 
+        System.out.println("-------------------------->"+MTIdir+"+++++++++++++++++++++++++++++");
+        if(!(MTIdir.exists())){
+            MTIdir.mkdir();
+
+        }
         System.out.println("-------------------------->"+namedir+"+++++++++++++++++++++++++++++");
         if(!(namedir.exists())){
             namedir.mkdir();
@@ -265,7 +271,7 @@ ProgressDialog progressDialog;
                 List<String> list_friend = new ArrayList<String>();
                 try {
 
-                    FileReader fr = new FileReader(new File(sdPath+"/MTI/friendlist.csv"));
+                    FileReader fr = new FileReader(new File(sdPath+"/friendlist.csv"));
                     BufferedReader br = new BufferedReader(fr);
                     String line;
                     StringTokenizer token;
@@ -817,7 +823,7 @@ ProgressDialog progressDialog;
                 List<String> list_friend = new ArrayList<String>();
                 try {
 
-                    FileReader fr = new FileReader(new File(sdPath+"/MTI/friendlist.csv"));
+                    FileReader fr = new FileReader(new File(sdPath+"/friendlist.csv"));
                     BufferedReader br = new BufferedReader(fr);
                     String line;
                     StringTokenizer token;
