@@ -42,7 +42,7 @@ import static android.os.Build.VERSION_CODES.M;
  * Created by tangcan0823 on 2016/11/16.
  */
 public class TomoFragment extends Fragment {
-    String name = "bb4";
+    String name = MainActivity.name;
     String interval = "5";
     private String sdPath = Environment.getExternalStorageDirectory().getPath();
 
@@ -184,7 +184,7 @@ ProgressDialog progressDialog;
         Date now = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat("HHmmss");//Representation in  ("yyyy/MM/dd HH:mm:ss")
         String hehe = dateFormat.format( now );
-        int NowTime=223100;//Integer.parseInt(hehe);
+        int NowTime=Integer.parseInt(hehe);
 
 
         //Turns the current time into seconds
@@ -1347,7 +1347,7 @@ ProgressDialog progressDialog;
      *
      */
     static void EmptyFile() {
-        String name = "bb4";
+        String name = MainActivity.name;
         String sdPath = Environment.getExternalStorageDirectory().getPath();
 
         //現在日時を取得する
@@ -1357,12 +1357,7 @@ ProgressDialog progressDialog;
         String time = sdf.format(c.getTime());
         String nowtime = time.substring(0,4)+time.substring(5,7)+time.substring(8,10);
 
-        Button button;
-        ListView listview;
-        Toolbar mToolbar;
-        String file = "";
-        String CSV_read = "d.csv";
-        String CSV_read1 = "d_acc.csv";
+
 
         try
         {
@@ -1402,7 +1397,7 @@ ProgressDialog progressDialog;
      *
      */
     static void InvalidData(){
-        String name = "bb4";
+        String name = MainActivity.name;
         String sdPath = Environment.getExternalStorageDirectory().getPath();
 
         //現在日時を取得する
@@ -1412,12 +1407,7 @@ ProgressDialog progressDialog;
         String time = sdf.format(c.getTime());
         String nowtime = time.substring(0,4)+time.substring(5,7)+time.substring(8,10);
 
-        Button button;
-        ListView listview;
-        Toolbar mToolbar;
-        String file = "";
-        String CSV_read = "d.csv";
-        String CSV_read1 = "d_acc.csv";
+
 
         int[] array_HourMark = new int[24];
         for(int i=0;i<array_HourMark.length;i++){

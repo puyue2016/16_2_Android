@@ -20,6 +20,7 @@ import android.view.View;
 public class
 MainActivity extends AppCompatActivity {
 
+    public  static String name = "a";
     private Toolbar mToolbar;
     private DrawerLayout mDrawerLayout;
     private NavigationView mNavigationView;
@@ -93,10 +94,10 @@ MainActivity extends AppCompatActivity {
         mToolbar.setTitle(R.string.navigation_tomo);
     }
 
-    private void switchToData() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new DataFragment()).commit();
-        mToolbar.setTitle(R.string.navigation_data);
-    }
+//    private void switchToData() {
+//        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new DataFragment()).commit();
+//        mToolbar.setTitle(R.string.navigation_data);
+//    }
 
     private void switchToPiechart() {
         getSupportFragmentManager().beginTransaction().replace(R.id.frame_content, new PiechartFragment()).commit();
@@ -120,9 +121,9 @@ MainActivity extends AppCompatActivity {
                                 switchTotomo();
                                 break;
 
-                            case R.id.navigation_item_data:
-                                switchToData();
-                                break;
+//                            case R.id.navigation_item_data:
+//                                switchToData();
+//                                break;
 
                             case R.id.navigation_item_piechart:
                                 switchToPiechart();

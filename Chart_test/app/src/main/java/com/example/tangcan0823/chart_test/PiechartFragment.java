@@ -67,7 +67,7 @@ public class PiechartFragment extends Fragment {
     private String file;
     private Switch st;
     private String CSV_red, CSV_hitori,CSV_UP;
-    private String ID = "bb4";
+    private String ID = MainActivity.name ;
     private String sdPath = Environment.getExternalStorageDirectory().getPath() + "/MTI/" + ID;
 
     @Nullable

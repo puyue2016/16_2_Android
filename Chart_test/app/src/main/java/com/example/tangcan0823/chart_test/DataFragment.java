@@ -39,7 +39,7 @@ import java.util.Properties;
  */
 public class DataFragment extends Fragment implements View.OnClickListener,Runnable {
 
-    String name = "bb4";
+    String name = MainActivity.name;
     //現在日時を取得する
     Calendar c = Calendar.getInstance();
     //フォーマットパターンを指定して表示する

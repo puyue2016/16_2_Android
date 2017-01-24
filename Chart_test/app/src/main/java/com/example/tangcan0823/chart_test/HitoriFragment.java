@@ -52,7 +52,7 @@ public class HitoriFragment extends Fragment {
 
     private String file;
     private Integer number;
-    private String name = "bb4";
+    private String name = MainActivity.name ;
     private String sdPath = Environment.getExternalStorageDirectory().getPath() + "/MTI/" + name;
     @Nullable
     @Override
