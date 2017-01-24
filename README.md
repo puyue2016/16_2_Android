@@ -8,9 +8,9 @@ Android端末(API level > 21)</br>
 *** 本プログラムはネットワークを利用しない</br>
 
 ##実行に必要なファイル
-１．子供端末の取得Bluetoothデータ</br>
-２．子供端末の取得加速度データ</br>
-３．友達リスト</br>
+1.子供端末の取得Bluetoothデータ</br>
+2.子供端末の取得加速度データ</br>
+3.友達リスト</br>
 /(ID).csv</br>
 に解析に必要な子供端末のBluetoothデータを保存する．</br>
 /(ID)_acc.csv</br>
@@ -19,13 +19,13 @@ Android端末(API level > 21)</br>
 のファイルに全部友達のBluetoothIDを保存する．</br>
 
 ##実行データの参照
-１．ハードウェア端末からファイル</br>
+1.子供端末からファイル</br>
 * (ID).csv　</br>
 * (ID)_acc.csv</br>
 は</br>
 /（androidデバイスのメモリのルートディレクトリ）</br>
 に保存され，それらのファイルを参照し解析を行う．</br>
-２．全部友達のBluetoothIDを保存したファイル</br>
+2.全部友達のBluetoothIDを保存したファイル</br>
 * friendlist.csv　</br>
 は</br>
 /（androidデバイスのメモリのルートディレクトリ）</br>
